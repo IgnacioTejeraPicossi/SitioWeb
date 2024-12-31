@@ -5,6 +5,39 @@
     <title>Ignacio's Personal Site</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
+      body {
+        display: flex;
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .sidebar {
+        width: 200px;
+        background-color: #f4f4f4;
+        padding: 15px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        height: 100%;
+      }
+
+      .sidebar a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+
+      .sidebar a:hover {
+        color: #007BFF;
+      }
+
+      .content {
+        margin-left: 220px;
+        padding: 20px;
+        width: 100%;
+      }
+
       .certification-list {
         margin-right: 10px; /* Ajusta el valor según sea necesario */
         margin-left: 10px;
@@ -14,70 +47,76 @@
     </style>
   </head>
   <body>
+    <!-- Menú lateral -->
+    <div class="sidebar">
+      <a href="#heading">About Me</a>
+      <a href="hobbies.html">My Hobbies</a>
+      <a href="contact-me.html">Contact Me</a>
+    </div>
+
     <!-- Contenido principal -->
-    <div style="text-align: center; margin-bottom: 20px;">
-      <img class="Ignacio" src="images/ignacio.jpg" alt="Ignacio profile picture" style="width: 150px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-      <h1 id="heading">Ignacio Tejera Picossi</h1>
-      <p><em>Software Test Manager and Test Automation Engineer <strong><a href="https://item.no">Item Consulting</a> (Automation Engineer)</strong>.</em></p>
-      <p>I am a software test engineer.</p>
+    <div class="content">
+      <div style="text-align: center; margin-bottom: 20px;">
+        <img class="Ignacio" src="images/ignacio.jpg" alt="Ignacio profile picture" style="width: 150px; border-radius: 50%; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+        <h1 id="heading">Ignacio Tejera Picossi</h1>
+        <p><em>Software Test Manager and Test Automation Engineer <strong><a href="https://item.no">Item Consulting</a> (Automation Engineer)</strong>.</em></p>
+        <p>I am a software test engineer.</p>
+      </div>
+      <hr>
+      <h3>Certification</h3>
+      <div class="centered-content">
+        <ul class="certification-list">
+          <li>ISTQB Advanced Test Manager</li>
+          <li>ISTQB Advanced Level Test Automation Engineer</li>
+          <li>ISTQB AI Testing</li>
+          <li>ISTQB Foundation Software Tester sertifisert</li>
+        </ul>
+      </div>
+      <hr>
+      <h3>Work Experience</h3>
+      <table cellspacing="10">
+        <thead>
+          <tr>
+            <th>Dates</th>
+            <th>Work</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1991-2010</td>
+            <td>Leed Developer/Developer at Mikromarc</td>
+          </tr>
+          <tr>
+            <td>2010-2019</td>
+            <td>Test Manager/Tester at Bibits with product Mikromarc 3</td>
+          </tr>
+          <tr>
+            <td>2019-2023</td>
+            <td>Test Manager/Automatic test Engineer at Axiell with product WeLib/Quria/Arena</td>
+          </tr>
+          <tr>
+            <td>2023-2024</td>
+            <td>Test Manager/Automatic test Engineer at Item Consulting</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr>
+      <h3>Skills</h3>
+      <table cellspacing="10">
+        <tr>
+          <td>Test Manager</td>
+          <td>*****</td>
+        </tr>
+        <tr>
+          <td>Automatic test Engineer</td>
+          <td>****</td>
+        </tr>
+        <tr>
+          <td>Programming experience in different languages: C#, Pascal, JavaScript.</td>
+          <td>****</td>
+        </tr>
+      </table>
     </div>
-    <hr>
-    <h3>Certification</h3>
-    <div class="centered-content">
-      <ul class="certification-list">
-        <li>ISTQB Advanced Test Manager</li>
-        <li>ISTQB Advanced Level Test Automation Engineer</li>
-        <li>ISTQB AI Testing</li>
-        <li>ISTQB Foundation Software Tester sertifisert</li>
-      </ul>
-    </div>
-    <hr>
-    <h3>Work Experience</h3>
-    <table cellspacing="10">
-      <thead>
-        <tr>
-          <th>Dates</th>
-          <th>Work</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1991-2010</td>
-          <td>Leed Developer/Developer at Mikromarc</td>
-        </tr>
-        <tr>
-          <td>2010-2019</td>
-          <td>Test Manager/Tester at Bibits with product Mikromarc 3</td>
-        </tr>
-        <tr>
-          <td>2019-2023</td>
-          <td>Test Manager/Automatic test Engineer at Axiell with product WeLib/Quria/Arena</td>
-        </tr>
-        <tr>
-          <td>2023-2024</td>
-          <td>Test Manager/Automatic test Engineer at Item Consulting</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr>
-    <h3>Skills</h3>
-    <table cellspacing="10">
-      <tr>
-        <td>Test Manager</td>
-        <td>*****</td>
-      </tr>
-      <tr>
-        <td>Automatic test Engineer</td>
-        <td>****</td>
-      </tr>
-      <tr>
-        <td>Programming experience in different languages: C#, Pascal, JavaScript.</td>
-        <td>****</td>
-      </tr>
-    </table>
-    <hr>
-    <a href="hobbies.html">My Hobbies</a>
-    <a href="contact-me.html">Contact Me</a>
 
     <!-- Código JavaScript -->
     <script>
