@@ -9,17 +9,20 @@ body {
 
 /* Hovedoverskrift */
 h1 {
-  color: #333333; /* Mørk grå */
+  color: white; 
+  background-color: #5a9bd4; /* Profesjonelt blått */
   font-size: 2.5em;
   text-align: center;
   margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 /* Underrubrikk */
 h3 {
-  color: #555555; /* Mellomgrå */
+  color: #5a9bd4; /* Profesjonelt blått */
   font-size: 1.8em;
   text-align: center;
   margin-top: 10px;
@@ -30,53 +33,12 @@ h3 {
 hr {
   border: 0;
   height: 1px;
-  background: #cccccc; /* Lys grå */
-  width: 80%; /* Gjør den bredere */
+  background: #cccccc;
+  width: 80%;
   margin: 20px auto;
 }
 
-/* Class Selector */
-.Ignacio {
-  background-color: #FF6F61; /* Dempet rød for å fange oppmerksomhet */
-  shape-margin: 2px;
-  padding: 10px;
-  color: white;
-  border-radius: 5px;
-  text-align: center;
-}
-
-/* ID Selector */
-#heading {
-  color: #ffffff;
-  background-color: #007BFF; /* Blå for profesjonelt preg */
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Sertifiseringer */
-ul {
-  list-style-type: square;
-  margin: 20px;
-  padding: 0;
-}
-
-li {
-  margin: 10px 0;
-  font-size: 1.1em;
-  color: #333333;
-}
-
-/* Estilo específico para la lista de certificaciones */
-.certification-list {
-  margin-right: 10px; /* Ajusta el valor según sea necesario */
-  margin-left: 10px;
-  padding: 0;
-  list-style-position: inside;
-}
-
-/* Arbeidserfaring */
+/* Tabeller */
 table {
   width: 80%;
   margin: 20px auto;
@@ -91,7 +53,7 @@ td, th {
 }
 
 th {
-  background-color: #007BFF;
+  background-color: #5a9bd4; /* Profesjonelt blått */
   color: white;
 }
 
@@ -104,7 +66,7 @@ th {
 }
 
 .skill-item {
-  background-color: #FF6F61;
+  background-color: #5a9bd4; /* Profesjonelt blått */
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -113,85 +75,13 @@ th {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Kontaktseksjon */
+/* Lenker */
 a {
-  color: #007BFF;
+  color: #5a9bd4; /* Profesjonelt blått */
   text-decoration: none;
   font-weight: bold;
 }
 
 a:hover {
   text-decoration: underline;
-}
-
-/* Animaciones */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
-/* Aplicar animaciones */
-h1 {
-  animation: fadeIn 2s ease-in-out;
-}
-
-.Ignacio {
-  animation: zoomIn 1.5s ease-in-out;
-}
-
-/* Agregar animación a los elementos de la lista */
-ul li {
-  animation: fadeIn 1.5s ease-in-out;
-  animation-delay: 0.3s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-}
-
-ul li:nth-child(2) {
-  animation-delay: 0.5s;
-}
-
-ul li:nth-child(3) {
-  animation-delay: 0.7s;
-}
-
-ul li:nth-child(4) {
-  animation-delay: 0.9s;
-}
-
-/* Tablas med animación */
-table {
-  animation: fadeIn 1.5s ease-in-out;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-delay: 0.5s;
-}
-/* Contenedor centrado para listas y tablas */
-.centered-content {
-  width: 80%; /* Ancho similar al de las tablas */
-  margin: 0 auto; /* Centra el contenido horizontalmente */
-  text-align: left; /* Asegura el texto alineado a la izquierda */
-}
-
-.certification-list {
-  list-style-type: square; /* Mantiene el estilo de lista */
-  margin: 0; /* Elimina márgenes adicionales */
-  padding-left: 20px; /* Alineación del marcador de lista */
 }
