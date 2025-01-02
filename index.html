@@ -40,13 +40,34 @@
         margin-left: 220px;
         padding: 20px;
         width: 100%;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeIn 1s forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
 
       .certification-list {
-        margin-right: 10px; /* Ajusta el valor según sea necesario */
+        margin-right: 10px;
         margin-left: 10px;
         padding: 0;
         list-style-position: inside;
+        opacity: 0;
+        animation: fadeIn 1s forwards 0.5s;
+      }
+
+      table {
+        opacity: 0;
+        animation: fadeIn 1s forwards 0.5s;
       }
     </style>
   </head>
@@ -125,18 +146,11 @@
     <!-- Código JavaScript -->
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-        const animatedElements = document.querySelectorAll("table, ul li");
-
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.style.opacity = "1";
-            }
-          });
-        });
+        const animatedElements = document.querySelectorAll(".content, .certification-list, table");
 
         animatedElements.forEach((el) => {
-          observer.observe(el);
+          el.style.opacity = "0";
+          el.style.animation = "fadeIn 1s forwards";
         });
       });
     </script>
