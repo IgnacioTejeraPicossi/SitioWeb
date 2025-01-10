@@ -14,11 +14,36 @@ h1 {
   background-color: #5a9bd4; /* Profesjonelt blått */
   font-size: 2.5em;
   text-align: center;
-  margin-top: 20px;
+  margin-top: 0; /* Fjern margin som kan skape overlapping */
   padding: 15px;
   border-radius: 8px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+/* Sidebar-styling */
+.sidebar a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #5a9bd4;
+  color: #fff; /* Endrer tekstfarge til hvit for bedre kontrast */
+}
+
+/* Innholdsstyling */
+.content {
+  margin-left: 220px;
+  padding: 20px;
+  width: 100%;
+  margin-top: 20px; /* Sørg for at det er plass over innholdet */
 }
 
 /* Underrubrikk */
@@ -85,21 +110,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-/* Sidebar-styling */
-.sidebar a {
-  display: block;
-  color: #333;
-  text-decoration: none;
-  margin: 10px 0;
-  font-size: 18px;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.sidebar a:hover {
-  background-color: #5a9bd4;
-  color: #fff; /* Endrer tekstfarge til hvit for bedre kontrast */
 }
