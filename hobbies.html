@@ -1,64 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Hobbies</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-      body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-        color: #333;
-        line-height: 1.6;
-      }
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Hobbies</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      display: flex;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
 
-      h1, h3 {
-        text-align: center;
-        color: #5a9bd4; /* Cambiado */
-        margin-top: 20px;
-        text-transform: uppercase;
-      }
+    .sidebar {
+      width: 200px;
+      background-color: #f4f4f4;
+      padding: 15px;
+      box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      height: 100%;
+    }
 
-      .hobbies-container {
-        max-width: 800px;
-        margin: 0 auto;
-        background: #ffffff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
+    .sidebar a {
+      display: block;
+      color: #333;
+      text-decoration: none;
+      margin: 10px 0;
+      font-size: 18px;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
 
-      ol {
-        margin: 20px 0;
-        padding-left: 20px;
-      }
+    .sidebar a:hover {
+      background-color: #5a9bd4;
+      color: #fff; /* Gjør teksten hvit for bedre kontrast */
+    }
 
-      li {
-        margin-bottom: 10px;
-        font-size: 1.2em;
-      }
+    .content {
+      margin-left: 220px;
+      padding: 20px;
+      width: 100%;
+    }
 
-      li a {
-        text-decoration: none;
-        color: #5a9bd4; /* Cambiado */
-        font-weight: bold;
-      }
+    h1, h3 {
+      text-align: center;
+      color: #5a9bd4;
+      margin-top: 20px;
+      text-transform: uppercase;
+    }
 
-      li a:hover {
-        color: #497aa6; /* Un tono más oscuro */
-        text-decoration: underline;
-      }
+    .hobbies-container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
 
-      .hobby-icon {
-        margin-right: 10px;
-        vertical-align: middle;
-      }
-    </style>
-  </head>
-  <body>
+    ol {
+      margin: 20px 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    li a {
+      text-decoration: none;
+      color: #5a9bd4;
+      font-weight: bold;
+    }
+
+    li a:hover {
+      color: #497aa6;
+      text-decoration: underline;
+    }
+
+    .hobby-icon {
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <!-- Meny til venstre -->
+  <div class="sidebar">
+    <a href="#heading">About Me</a>
+    <a href="hobbies.html">My Hobbies</a>
+    <a href="contact-me.html">Contact Me</a>
+  </div>
+
+  <!-- Hovedinnhold -->
+  <div class="content">
     <h1>My Hobbies</h1>
     <div class="hobbies-container">
       <h3>Things I Enjoy Doing</h3>
@@ -87,5 +127,6 @@
         </li>
       </ol>
     </div>
-  </body>
+  </div>
+</body>
 </html>

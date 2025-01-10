@@ -86,3 +86,20 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* Sidebar-styling */
+.sidebar a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #5a9bd4;
+  color: #fff; /* Endrer tekstfarge til hvit for bedre kontrast */
+}
