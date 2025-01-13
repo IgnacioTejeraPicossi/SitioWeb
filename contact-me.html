@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,34 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Ignacio Tejera</title>
     <link rel="stylesheet" href="css/styles.css">
-    
     <style>
       body {
-        font-family: 'Arial', sans-serif;
+        display: flex;
         margin: 0;
-        padding: 0;
+        font-family: 'Arial', sans-serif;
         background-color: #f4f4f4;
         color: #333;
       }
 
-      h1 {
-        text-align: center;
-        color: #5a9bd4; /* Cambiado a un azul profesional */
+      .sidebar {
+        width: 200px;
+        background-color: #f4f4f4;
+        padding: 15px;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        height: 100%;
+      }
+
+      .sidebar a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        margin: 10px 0;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .sidebar a:hover {
+        background-color: #5a9bd4;
+        color: #fff;
+      }
+
+      .content {
+        margin-left: 220px;
+        padding: 20px;
+        width: 100%;
         margin-top: 20px;
-        text-transform: uppercase;
       }
 
-      p {
+      h1 {
+        color: white;
+        background-color: #5a9bd4;
+        padding: 15px;
+        margin-top: 0;
         text-align: center;
-        margin: 5px 0;
-      }
-
-      hr {
-        border: 0;
-        height: 1px;
-        background: #cccccc;
-        margin: 20px auto;
-        width: 80%;
+        border-radius: 5px;
+        text-transform: uppercase;
       }
 
       .container {
@@ -66,12 +88,12 @@
       input[type="email"]:focus,
       textarea:focus {
         outline: none;
-        border-color: #5a9bd4; /* Cambiado */
-        box-shadow: 0 0 5px rgba(90, 155, 212, 0.5); /* Cambiado */
+        border-color: #5a9bd4;
+        box-shadow: 0 0 5px rgba(90, 155, 212, 0.5);
       }
 
       input[type="submit"] {
-        background-color: #5a9bd4; /* Cambiado */
+        background-color: #5a9bd4;
         color: white;
         padding: 10px 15px;
         border: none;
@@ -81,7 +103,7 @@
       }
 
       input[type="submit"]:hover {
-        background-color: #497aa6; /* Un tono más oscuro */
+        background-color: #497aa6;
       }
 
       footer {
@@ -92,7 +114,7 @@
       }
 
       footer a {
-        color: #5a9bd4; /* Cambiado */
+        color: #5a9bd4;
         text-decoration: none;
       }
 
@@ -102,31 +124,40 @@
     </style>
   </head>
   <body>
-    <h1>Contact Details</h1>
-
-    <div class="container">
-      <p><strong>My Fictional Address</strong></p>
-      <p>Phone: 41428685</p>
-      <p>Email: <a href="mailto:ignacio.tejera@outlook.com">ignacio.tejera@outlook.com</a></p>
-      <hr>
-
-      <form action="send-email.php" method="post">
-        <label for="yourName">Your Name:</label>
-        <input type="text" id="yourName" name="yourName" placeholder="Enter your name" required>
-
-        <label for="yourEmail">Your Email:</label>
-        <input type="email" id="yourEmail" name="yourEmail" placeholder="Enter your email" required>
-
-        <label for="yourMessage">Your Message:</label>
-        <textarea id="yourMessage" name="yourMessage" rows="5" placeholder="Write your message here..." required></textarea>
-
-        <input type="submit" value="Send Message">
-      </form>
+    <!-- Meny til venstre -->
+    <div class="sidebar">
+      <a href="#heading">About Me</a>
+      <a href="hobbies.html">My Hobbies</a>
+      <a href="contact.html">Contact Me</a>
     </div>
 
-    <footer>
-      <p>Designed by Ignacio Tejera. For more information, visit <a href="https://item.no">Item Consulting</a>.</p>
-    </footer>
+    <!-- Innhold -->
+    <div class="content">
+      <h1>Contact Details</h1>
+
+      <div class="container">
+        <p><strong>My Fictional Address</strong></p>
+        <p>Phone: 41428685</p>
+        <p>Email: <a href="mailto:ignacio.tejera@outlook.com">ignacio.tejera@outlook.com</a></p>
+        <hr>
+
+        <form action="send-email.php" method="post">
+          <label for="yourName">Your Name:</label>
+          <input type="text" id="yourName" name="yourName" placeholder="Enter your name" required>
+
+          <label for="yourEmail">Your Email:</label>
+          <input type="email" id="yourEmail" name="yourEmail" placeholder="Enter your email" required>
+
+          <label for="yourMessage">Your Message:</label>
+          <textarea id="yourMessage" name="yourMessage" rows="5" placeholder="Write your message here..." required></textarea>
+
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+
+      <footer>
+        <p>Designed by Ignacio Tejera. For more information, visit <a href="https://item.no">Item Consulting</a>.</p>
+      </footer>
+    </div>
   </body>
 </html>
-
